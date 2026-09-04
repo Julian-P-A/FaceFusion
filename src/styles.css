@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  /* Matches the actual computed colors read from supercut.ai: body bg, body text and
+     their accent action-button color (not their brand pink swatch — the live one). */
+  --color-background: #100e0e;
+  --color-surface: #1a1817;
+  --color-foreground: #fdfff0;
+  --color-muted: rgba(253, 255, 240, 0.6);
+  --color-border: rgba(253, 255, 240, 0.1);
+
+  --color-dark: #0a0908;
+  --color-dark-surface: #161413;
+  --color-dark-foreground: #fdfff0;
+
+  --color-accent: #ff0055;
+  --color-accent-secondary: #72a7ff;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter Tight", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-foreground);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

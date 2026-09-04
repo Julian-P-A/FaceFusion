@@ -201,7 +201,7 @@ export const translations: Record<Locale, Dictionary> = {
       floatingStatus: "Status: Active",
     },
     useCaseIntro: {
-      eyebrow: "( 1 ) What it does",
+      eyebrow: "( What it does )",
       heading: ["Change the moment.", "Not the fun."],
       tabs: [
         {
@@ -486,7 +486,7 @@ export const translations: Record<Locale, Dictionary> = {
       floatingStatus: "Estado: Activo",
     },
     useCaseIntro: {
-      eyebrow: "( 1 ) Qué hace",
+      eyebrow: "( Qué hace )",
       heading: ["Cambia el rostro.", "No la diversión."],
       tabs: [
         {
